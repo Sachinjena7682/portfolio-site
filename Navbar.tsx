@@ -14,12 +14,12 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-background/40 backdrop-blur-xl border-b border-white/5">
+    <nav className="fixed top-0 w-full z-50 bg-[rgb(14_14_15/0.4)] backdrop-blur-xl border-b border-white/5">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="text-2xl font-bold font-display tracking-tight bg-gradient-to-br from-primary to-primary-dim bg-clip-text text-transparent"
+          className="text-2xl font-bold font-display tracking-tight bg-gradient-to-br from-[rgb(var(--color-primary))] to-[rgb(var(--color-primary-dim))] bg-clip-text text-transparent"
         >
           Sachin K
         </motion.div>
@@ -44,7 +44,7 @@ export default function Navbar() {
             animate={{ opacity: 1, scale: 1 }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-6 py-2 rounded-full radiant-bg text-background font-bold font-display text-sm"
+            className="px-6 py-2 rounded-full bg-gradient-to-br from-[#b6a0ff] to-[#7e51ff] text-black font-bold font-display text-sm"
           >
             Get Started
           </motion.a>
@@ -61,7 +61,7 @@ export default function Navbar() {
         <motion.div
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: 'auto' }}
-          className="md:hidden bg-surface border-b border-white/10 px-6 py-8 flex flex-col gap-6"
+          className="md:hidden bg-[#1a191b] border-b border-white/10 px-6 py-8 flex flex-col gap-6"
         >
           {navLinks.map((link) => (
             <a
@@ -76,7 +76,7 @@ export default function Navbar() {
           <a
             href="#offer"
             onClick={() => setIsOpen(false)}
-            className="w-full py-4 rounded-xl radiant-bg text-background font-bold font-display text-center"
+            className="w-full py-4 rounded-xl bg-gradient-to-br from-[#b6a0ff] to-[#7e51ff] text-black font-bold font-display text-center"
           >
             Get Started
           </a>
