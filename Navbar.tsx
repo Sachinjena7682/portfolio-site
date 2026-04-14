@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-background/40 backdrop-blur-xl border-b border-white/5">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           className="text-2xl font-bold font-display tracking-tight bg-gradient-to-br from-primary to-primary-dim bg-clip-text text-transparent"
@@ -58,22 +58,22 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: 'auto' }}
           className="md:hidden bg-surface border-b border-white/10 px-6 py-8 flex flex-col gap-6"
         >
           {navLinks.map((link) => (
-            <a 
-              key={link.name} 
-              href={link.href} 
+            <a
+              key={link.name}
+              href={link.href}
               onClick={() => setIsOpen(false)}
               className="text-lg font-medium text-white/60 hover:text-white"
             >
               {link.name}
             </a>
           ))}
-          <a 
+          <a
             href="#offer"
             onClick={() => setIsOpen(false)}
             className="w-full py-4 rounded-xl radiant-bg text-background font-bold font-display text-center"
