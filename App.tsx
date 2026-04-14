@@ -3,16 +3,16 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Industries from './components/Industries';
-import Results from './components/Results';
-import Process from './components/Process';
-import Testimonials from './components/Testimonials';
-import Offer from './components/Offer';
-import FAQ from './components/FAQ';
-import Footer from './components/Footer';
+import Navbar from './Navbar';
+import Hero from './Hero';
+import About from './About';
+import Industries from './Industries';
+import Results from './Results';
+import Process from './Process';
+import Testimonials from './Testimonials';
+import Offer from './Offer';
+import FAQ from './FAQ';
+import Footer from './Footer';
 import { motion } from 'motion/react';
 
 export default function App() {
