@@ -1,20 +1,68 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+  <h1>🚀 Sachin Kumar Jena</h1>
+  <h3>Lead Generation & Performance Marketing Specialist</h3>
+  <p>Helping businesses generate high-quality leads using Meta & Google Ads</p>
 </div>
 
-# Run and deploy your AI Studio app
+---
 
-This contains everything you need to run your app locally.
+## 🌐 Live Website
 
-View your app in AI Studio: https://ai.studio/apps/9648aad4-fcbc-4cfb-8c7f-c4753ac633e0
+👉 https://leadbysachin.vercel.app
 
-## Run Locally
+---
 
-**Prerequisites:**  Node.js
+## 💼 What I Do
 
+* 📈 Lead Generation (Meta Ads & Google Ads)
+* 🎯 High-Intent Customer Acquisition
+* 💬 WhatsApp Funnel Setup
+* 📊 Campaign Optimization for ROI
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+
+## 🏆 Industries I Serve
+
+* Real Estate
+* Interior Design
+* Cleaning Services
+* E-commerce
+* B2B / B2C / D2C Businesses
+
+---
+
+## 🚀 My Approach
+
+1. Understand business goals
+2. Create targeted ad campaigns
+3. Generate qualified leads
+4. Optimize for better conversions
+
+---
+
+## 🎁 Offer
+
+💡 Get **5 FREE leads as a trial**
+No risk — only results.
+
+---
+
+## 📞 Contact Me
+
+* WhatsApp: +91-7682058601
+* Email: [jenasachin773@gmail.com](mailto:jenasachin773@gmail.com)
+
+---
+
+## ⚡ Tech Stack
+
+* React / TypeScript
+* Vite
+* Tailwind CSS
+* Deployed on Vercel
+
+---
+
+## 📌 Note
+
+This project is a portfolio website designed to showcase lead generation expertise and help businesses grow through data-driven marketing strategies.
