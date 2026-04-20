@@ -29,23 +29,23 @@ export default function FAQ() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-24 bg-surface/20" id="faq">
-      <div className="max-w-3xl mx-auto px-6">
+    <section className="py-16 sm:py-20 md:py-24 bg-surface/20 px-4 sm:px-6" id="faq">
+      <div className="max-w-3xl mx-auto">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-4xl md:text-6xl font-black font-display mb-4">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-display mb-3 sm:mb-4">
             Common <span className="text-secondary">Questions</span>
           </h2>
-          <p className="text-white/60 text-lg">
+          <p className="text-white/60 text-sm sm:text-base md:text-lg">
             Everything you need to know before we start scaling your business.
           </p>
         </motion.div>
 
-        <div className="space-y-4">
+        <div className="space-y-3 sm:space-y-4">
           {faqs.map((faq, i) => (
             <motion.div
               key={i}
@@ -53,17 +53,17 @@ export default function FAQ() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="glass-card rounded-2xl border border-white/5 overflow-hidden"
+              className="glass-card rounded-xl sm:rounded-2xl border border-white/5 overflow-hidden"
             >
               <button
                 onClick={() => setActiveIndex(activeIndex === i ? null : i)}
-                className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-white/5 transition-colors"
+                className="w-full px-4 sm:px-6 md:px-8 py-4 sm:py-6 flex items-center justify-between text-left hover:bg-white/5 transition-colors"
               >
-                <span className="text-lg font-bold font-display">{faq.question}</span>
+                <span className="text-base sm:text-lg font-bold font-display text-left">{faq.question}</span>
                 {activeIndex === i ? (
-                  <ChevronUp className="text-primary w-5 h-5" />
+                  <ChevronUp className="text-primary w-4 sm:w-5 h-4 sm:h-5 flex-shrink-0 ml-4" />
                 ) : (
-                  <ChevronDown className="text-white/40 w-5 h-5" />
+                  <ChevronDown className="text-white/40 w-4 sm:w-5 h-4 sm:h-5 flex-shrink-0 ml-4" />
                 )}
               </button>
               
@@ -75,7 +75,7 @@ export default function FAQ() {
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3, ease: 'easeInOut' }}
                   >
-                    <div className="px-8 pb-8 text-white/60 leading-relaxed">
+                    <div className="px-4 sm:px-6 md:px-8 pb-4 sm:pb-6 md:pb-8 text-white/60 text-sm sm:text-base leading-relaxed">
                       {faq.answer}
                     </div>
                   </motion.div>

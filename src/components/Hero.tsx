@@ -3,26 +3,26 @@ import { TrendingUp, ArrowRight } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-32 px-6 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center pt-20 sm:pt-24 md:pt-32 px-4 sm:px-6 overflow-hidden">
       {/* Background Glows */}
-      <div className="absolute top-1/4 -left-20 w-96 h-96 bg-primary/20 blur-[120px] rounded-full"></div>
-      <div className="absolute bottom-1/4 -right-20 w-[500px] h-[500px] bg-secondary/10 blur-[150px] rounded-full"></div>
+      <div className="absolute top-1/4 -left-20 sm:-left-10 w-64 sm:w-96 h-64 sm:h-96 bg-primary/20 blur-[80px] sm:blur-[120px] rounded-full"></div>
+      <div className="absolute bottom-1/4 -right-20 sm:-right-10 w-80 sm:w-[500px] h-80 sm:h-[500px] bg-secondary/10 blur-[100px] sm:blur-[150px] rounded-full"></div>
 
-      <div className="relative z-10 max-w-5xl mx-auto text-center">
+      <div className="relative z-10 w-full max-w-5xl mx-auto text-center">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-high border border-white/10 mb-8"
+          className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-surface-high border border-white/10 mb-6 sm:mb-8"
         >
-          <TrendingUp className="text-secondary w-4 h-4" />
-          <span className="text-[10px] font-bold tracking-widest uppercase text-white/60">Scalable Performance Marketing</span>
+          <TrendingUp className="text-secondary w-3 sm:w-4 h-3 sm:h-4 flex-shrink-0" />
+          <span className="text-[8px] sm:text-[10px] font-bold tracking-widest uppercase text-white/60">Scalable Performance Marketing</span>
         </motion.div>
 
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="text-5xl md:text-8xl font-black font-display tracking-tighter leading-[0.9] mb-8"
+          className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-black font-display tracking-tighter leading-[1.1] sm:leading-[0.95] md:leading-[0.9] mb-6 sm:mb-8"
         >
           We Generate <span className="text-primary italic">High-Quality</span> Leads That Turn Into Paying Customers
         </motion.h1>
@@ -31,7 +31,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="text-xl md:text-2xl text-white/60 max-w-2xl mx-auto mb-10"
+          className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/60 max-w-2xl mx-auto mb-8 sm:mb-10 px-2"
         >
           Helping businesses scale with data-driven Meta & Google Ads strategies built for aggressive growth.
         </motion.p>
@@ -40,22 +40,22 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 px-2"
         >
           <motion.a 
             href="#offer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="radiant-bg text-background text-lg px-10 py-5 rounded-full font-display font-bold flex items-center gap-3 shadow-xl shadow-primary/20"
+            className="w-full sm:w-auto radiant-bg text-background text-base sm:text-lg px-6 sm:px-10 py-4 sm:py-5 rounded-full font-display font-bold flex items-center justify-center gap-2 sm:gap-3 shadow-xl shadow-primary/20"
           >
             Get Free 5 Leads
-            <ArrowRight className="w-5 h-5" />
+            <ArrowRight className="w-4 sm:w-5 h-4 sm:h-5" />
           </motion.a>
           <motion.a 
             href="#results"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-surface-high text-white text-lg px-10 py-5 rounded-full font-display font-bold border border-white/10 hover:bg-surface transition-colors"
+            className="w-full sm:w-auto bg-surface-high text-white text-base sm:text-lg px-6 sm:px-10 py-4 sm:py-5 rounded-full font-display font-bold border border-white/10 hover:bg-surface transition-colors text-center"
           >
             View Case Studies
           </motion.a>

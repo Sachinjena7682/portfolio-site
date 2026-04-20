@@ -29,20 +29,20 @@ export default function Results() {
   ];
 
   return (
-    <section className="py-24 bg-surface" id="results">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
+    <section className="py-16 sm:py-20 md:py-24 bg-surface" id="results" >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6 sm:gap-8">
           <div>
-            <h2 className="text-4xl md:text-6xl font-black font-display">Proven <span className="text-primary">Velocity</span></h2>
-            <p className="text-white/60 text-lg mt-4">Real results from live campaigns. No fluff, just math.</p>
+            <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-display">Proven <span className="text-primary">Velocity</span></h2>
+            <p className="text-white/60 text-sm sm:text-base md:text-lg mt-3 sm:mt-4">Real results from live campaigns. No fluff, just math.</p>
           </div>
-          <div className="flex gap-4">
-            <span className="bg-secondary/10 text-secondary px-4 py-2 rounded-full text-[10px] font-bold uppercase border border-secondary/20">Live Metrics</span>
-            <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-[10px] font-bold uppercase border border-primary/20">Verified Results</span>
+          <div className="flex flex-wrap gap-2 sm:gap-4">
+            <span className="bg-secondary/10 text-secondary px-3 sm:px-4 py-2 rounded-full text-[8px] sm:text-[10px] font-bold uppercase border border-secondary/20">Live Metrics</span>
+            <span className="bg-primary/10 text-primary px-3 sm:px-4 py-2 rounded-full text-[8px] sm:text-[10px] font-bold uppercase border border-primary/20">Verified Results</span>
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
           {cases.map((c, i) => (
             <motion.div 
               key={c.client}
@@ -50,9 +50,9 @@ export default function Results() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.2 }}
-              className="bg-surface-high rounded-3xl overflow-hidden border border-white/5"
+              className="bg-surface-high rounded-2xl sm:rounded-3xl overflow-hidden border border-white/5"
             >
-              <div className="h-64 overflow-hidden relative">
+              <div className="h-40 sm:h-52 md:h-64 overflow-hidden relative">
                 <img 
                   src={c.img} 
                   alt={c.client} 
@@ -62,17 +62,17 @@ export default function Results() {
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-surface-high to-transparent"></div>
-                <div className="absolute bottom-6 left-8">
-                  <span className={`bg-${c.color} text-background px-3 py-1 rounded text-[10px] font-black uppercase mb-2 inline-block`}>{c.tag}</span>
-                  <h3 className="text-2xl font-bold font-display">{c.title}</h3>
-                  <p className="text-white/40 text-sm">{c.client}</p>
+                <div className="absolute bottom-4 sm:bottom-6 left-4 sm:left-8">
+                  <span className={`bg-${c.color} text-background px-2 sm:px-3 py-1 rounded text-[8px] sm:text-[10px] font-black uppercase mb-1 sm:mb-2 inline-block`}>{c.tag}</span>
+                  <h3 className="text-lg sm:text-2xl font-bold font-display">{c.title}</h3>
+                  <p className="text-white/40 text-xs sm:text-sm">{c.client}</p>
                 </div>
               </div>
-              <div className="p-8 grid grid-cols-3 gap-4">
+              <div className="p-4 sm:p-8 grid grid-cols-3 gap-2 sm:gap-4">
                 {c.metrics.map((m, j) => (
                   <div key={m.label} className={`text-center ${j === 1 ? 'border-x border-white/10' : ''}`}>
-                    <div className={`text-2xl font-black font-display text-${c.color}`}>{m.value}</div>
-                    <div className="text-[10px] text-white/40 uppercase font-bold">{m.label}</div>
+                    <div className={`text-xl sm:text-2xl font-black font-display text-${c.color}`}>{m.value}</div>
+                    <div className="text-[8px] sm:text-[10px] text-white/40 uppercase font-bold">{m.label}</div>
                   </div>
                 ))}
               </div>
